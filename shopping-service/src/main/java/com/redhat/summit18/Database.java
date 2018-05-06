@@ -23,7 +23,9 @@ public class Database {
                 new JsonObject()
                         .put("url", "jdbc:hsqldb:mem:test?shutdown=true")
                         .put("driver_class", "org.hsqldb.jdbcDriver")
-                        .put("max_pool_size", 10));
+                        .put("max_pool_size", 10)
+                        .put("provider_class", "io.vertx.ext.jdbc.spi.impl.C3P0DataSourceProvider")
+        );
     }
 
     public static Single<Database> initialize(Vertx vertx) {

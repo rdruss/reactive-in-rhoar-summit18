@@ -25,12 +25,6 @@
 			<artifactId>shopping-service</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>io.vertx</groupId>
-			<artifactId>reactive-in-rhoar-summit18</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 
